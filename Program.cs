@@ -3,41 +3,10 @@
 // либо задать на старте выполнения алгоритма. При решении не рекомендуется пользоваться коллекциями, 
 // лучше обойтись исключительно массивами.
 
-void Print(string[] arr)
-{
-    string size = arr.Length;
 
-    for (int i = 0; i < size; i++)
-        Console.Write($"{arr[i]} ");
-    Console.WriteLine();
+
 }
-
-string[] MassNums(int size, int from, int to)
-{
-    string[] arr = new string[size];
-
-    for (int i = 0; i < size; i++)
-        arr[i] = string.Parse(Console.ReadLine()!);
-    return arr;
-}
-
-void SumPosNeg(int[] arr)
-{
-    
-    for (int i = 0; i < arr.Length; i++)
-    {
-       arr[i] = - arr[i];
-        
-    }
-    
-} 
-
-
-int num = int.Parse(Console.ReadLine()!);
-int start = int.Parse(Console.ReadLine()!);
-int stop = int.Parse(Console.ReadLine()!);
-
-string[] mass1 = MassNums(num, start, stop);
-Print(mass1);
-SumPosNeg(mass1);
-Print(mass1);
+string[] array1 = new string[8] {"Hello", "my", "name", "is", "Aleks", "I", "Live","in"};
+string[] array2 = new string[array1.Length];
+SecondArrayWithIF(array1, array2);
+PrintArray(array2);
